@@ -1,0 +1,6 @@
+<ul id="toc">
+  <% @toc.pages.each do |page| %>
+    <li><a href="<%= page.link %>"><%= page.title %></a></li>
+  <% end %>
+</ul>
+

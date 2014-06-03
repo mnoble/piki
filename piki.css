@@ -1,0 +1,16 @@
+*     { border: 0; outline: 0; }
+html  { min-height: 100%; position: relative; }
+body  { height: 100%; font: 18px "Helvetica Neue"; line-height: 150%; padding: 0; margin: 0; }
+a     { color: #4183c4; }
+pre   { background: #F9F9F9; padding: 10px 20px; border: 1px solid #F3F3F3; overflow-x: auto; }
+
+#page { width: 58%; float: left; overflow-y: scroll; padding: 0 1%; }
+#toc  { list-style: none; margin: 0; padding: 0; }
+#toc li { margin-bottom: 5px; }
+#todo { height: 100%; position: fixed; top: 0; right: 0; width: 40%; background: #E0E4EA; line-height: 110%; font: 15px "Source Code Pro"; }
+#todo #content { height: 100%; color: #333333; }
+#todo #content strong { color: #000000; }
+
+#notifications { list-style: none; position: absolute; bottom: 0; margin: 0; padding: 0; min-height: 300px; width: 100%; background: rgba(0, 0, 0, 0.05); }
+#notifications li { background: url("http://www.shlomifish.org/images/github-24-black.png") no-repeat 5px 6px; overflow: hidden; padding: 8px 10px 10px 30px; line-height: 150%; border-bottom: 1px solid rgba(255, 255, 255, 0.25); border-top: 1px solid rgba(0, 0, 0, 0.05); }
+
