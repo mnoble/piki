@@ -2,11 +2,15 @@
 <html>
 <head>
   <title>Piki</title>
+
   <script src="http://cdnjs.cloudflare.com/ajax/libs/zepto/1.0/zepto.min.js" type="text/javascript"></script>
-  <script src="/piki.js" type="text/javascript"></script>
-  <script src="/todo.js" type="text/javascript"></script>
+  <script src="/javascript/piki.js" type="text/javascript"></script>
+  <script src="/javascript/task_list.js" type="text/javascript"></script>
+  <script src="/javascript/task.js" type="text/javascript"></script>
+
   <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
-  <link href="/piki.css" type="text/css" rel="stylesheet" />
+  <link href="/css/piki.css" type="text/css" rel="stylesheet" />
+  <link href="/css/xcode.css" type="text/css" rel="stylesheet" />
 </head>
 <body>
   <div id="page">
@@ -14,6 +18,9 @@
   </div>
 
   <div id="todo">
+    <ul id="tasks">
+    </ul>
+
     <div id="content" contenteditable="true">
     </div>
 
@@ -22,8 +29,11 @@
   </div>
 
   <script type="text/javascript">
-    Piki.init()
-    Piki.initTodo()
+      $(function() {
+          piki = new Piki();
+          taskList = new TaskList();
+          taskList.load();
+      });
   </script>
 </body>
 </html>
